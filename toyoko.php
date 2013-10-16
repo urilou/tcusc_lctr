@@ -340,6 +340,9 @@ echo "東横線の運転状況: ".$toyokoinfo."<br>";
     }else if  (preg_match("/一部列車に遅れ/", $toyokoinfo)){
         echo "一部の電車が遅れています。";
         $tlstaus = "一部の電車が遅れています。";
+    }else if  (preg_match("/一部列車に運休/", $toyokoinfo)){
+        echo "一部の電車が運休しています。";
+        $tlstaus = "一部の電車が運休しています。";
     }else if  (preg_match("/直通運転を中止/", $toyokoinfo)){
         echo "直通運転を中止しています。";
         $tlstaus = "直通運転を中止しています。";

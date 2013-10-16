@@ -295,6 +295,9 @@ echo "大井町線の運転状況: ".$oimachiinfo."<br>";
     }else if  (preg_match("/一部列車に遅れ/", $oimachiinfo)){
         echo "一部の電車が遅れています。";
         $olstaus = "一部の電車が遅れています。";
+    }else if  (preg_match("/一部列車に運休/", $oimachiinfo)){
+        echo "一部の電車が運休しています。";
+        $olstaus = "一部の電車が運休しています。";
     }else if  (preg_match("/直通運転を中止/", $oimachiinfo)){
         echo "直通運転を中止しています。";
         $olstaus = "直通運転を中止しています。";
