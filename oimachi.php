@@ -277,6 +277,12 @@ echo "大井町線の運転状況: ".$oimachiinfo."<br>";
     }else if  (preg_match("/夜間作業遅延/", $oimachiinfo)){
         echo "夜間作業遅延のため";
         $olcause = "夜間作業遅延のため";
+    }else if  (preg_match("/災害復旧工事/", $oimachiinfo)){
+        echo "災害復旧工事のため";
+        $olcause = "災害復旧工事のため";
+    }else if  (preg_match("/ドア故障/", $oimachiinfo)){
+        echo "ドア故障のため";
+        $olcause = "ドア故障のため";
   }
 
 //現状パターン

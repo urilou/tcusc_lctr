@@ -322,6 +322,12 @@ echo "東横線の運転状況: ".$toyokoinfo."<br>";
     }else if  (preg_match("/夜間作業遅延/", $toyokoinfo)){
         echo "夜間作業遅延のため";
         $tlcause = "夜間作業遅延のため";
+    }else if  (preg_match("/災害復旧工事/", $toyokoinfo)){
+        echo "災害復旧工事のため";
+        $tlcause = "災害復旧工事のため";
+    }else if  (preg_match("/ドア故障/", $toyokoinfo)){
+        echo "ドア故障のため";
+        $tlcause = "ドア故障のため";
   }
 
 //現状パターン
