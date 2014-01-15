@@ -32,6 +32,9 @@ echo "大井町線の運転状況: ".$oimachiinfo."<br>";
     }else if  (preg_match("/伊勢崎線内/", $oimachiinfo)){
         echo "東武伊勢崎線での";
         $olline = "東武伊勢崎線での";
+    }else if  (preg_match("/新宿線内/", $oimachiinfo)){
+        echo "都営新宿線での";
+        $olline = "都営新宿線での";
 
   //会社線
     }else if  (preg_match("/東急/", $oimachiinfo)){
@@ -52,6 +55,9 @@ echo "大井町線の運転状況: ".$oimachiinfo."<br>";
     }else if  (preg_match("/埼玉高速/", $oimachiinfo)){
         echo "埼玉高速線での";
         $olline = "埼玉高速線での";
+    }else if  (preg_match("/都営/", $oimachiinfo)){
+        echo "都営線での";
+        $olline = "都営線での";
     }else if  (preg_match("/JR/", $oimachiinfo)){
         echo "JR線での";
         $olline = "JR線での";
@@ -325,6 +331,9 @@ echo "大井町線の運転状況: ".$oimachiinfo."<br>";
     }else if  (preg_match("/遅れと運休が/", $oimachiinfo)){
         echo "遅れています。また、一部の電車は運休しています。";
         $olstaus = "遅れています。また、一部の電車は運休しています。";
+    }else if  (preg_match("/再開しました。なお、列車に遅れ/", $oimachiinfo)){
+        echo "運転を見合わせていましたが、再開しました。なお、遅れや運休がある可能性があります。";
+        $olstaus = "運転を見合わせていましたが、再開しました。なお、遅れや運休がある可能性があります。";
     }else if  (preg_match("/再開し遅れが/", $oimachiinfo)){
         echo "運転を見合わせていましたが、再開しました。遅れや運休がでています。";
         $olstaus = "運転を見合わせていましたが、再開しました。遅れや運休がでています。";
