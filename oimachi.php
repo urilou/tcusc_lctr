@@ -4,7 +4,7 @@
   $html = file_get_html("http://transit.loco.yahoo.co.jp/traininfo/detail/115/0/");
   $filepath = "/home/users/1/mods.jp-usi/web/tcusc_lctr/oimachi.txt";
 
-$oimachiinfo = $html->find("dl.serviceInfo",0)->find("dd",0)->innertext;
+$oimachiinfo = $html->find("div.serviceInfo",0)->find("dd",0)->find("li",0)->innertext;
 echo "大井町線の運転状況: ".$oimachiinfo."<br>";
 
 //直通先パターン
@@ -289,6 +289,48 @@ echo "大井町線の運転状況: ".$oimachiinfo."<br>";
     }else if  (preg_match("/ドア故障/", $oimachiinfo)){
         echo "ドア故障のため";
         $olcause = "ドア故障のため";
+    }else if  (preg_match("/地震計誤作動に伴う安全確認/", $oimachiinfo)){
+        echo "地震計誤作動に伴う安全確認を行ったため";
+        $olcause = "地震計誤作動に伴う安全確認を行ったため";
+    }else if  (preg_match("/ホームドア故障/", $oimachiinfo)){
+        echo "ホームドア故障のため";
+        $olcause = "ホームドア故障のため";
+    }else if  (preg_match("/線路内立入/", $oimachiinfo)){
+        echo "線路内立ち入りのため";
+        $olcause = "線路内立ち入りのため";
+    }else if  (preg_match("/架線支障/", $oimachiinfo)){
+        echo "架線支障のため";
+        $olcause = "架線支障のため";
+    }else if  (preg_match("/信号関係点検/", $oimachiinfo)){
+        echo "信号関係点検のため";
+        $olcause = "信号関係点検のため";
+    }else if  (preg_match("/荷物挟まり対応/", $oimachiinfo)){
+        echo "荷物挟まり対応のため";
+        $olcause = "荷物挟まり対応のため";
+    }else if  (preg_match("/線路陥没/", $oimachiinfo)){
+        echo "線路陥没のため";
+        $olcause = "線路陥没のため";
+    }else if  (preg_match("/運行設備故障/", $oimachiinfo)){
+        echo "運行設備故障のため";
+        $olcause = "運行設備故障のため";
+    }else if  (preg_match("/車内安全確認/", $oimachiinfo)){
+        echo "車内安全確認のため";
+        $olcause = "車内安全確認のため";
+    }else if  (preg_match("/接続待ち/", $oimachiinfo)){
+        echo "接続待ちのため";
+        $olcause = "接続待ちのため";
+    }else if  (preg_match("/車両搬入作業/", $oimachiinfo)){
+        echo "車両搬入作業のため";
+        $olcause = "車両搬入作業のため";
+    }else if  (preg_match("/整備工事/", $oimachiinfo)){
+        echo "整備工事のため";
+        $olcause = "整備工事のため";
+    }else if  (preg_match("/竜巻注意情報発表/", $oimachiinfo)){
+        echo "竜巻注意情報発表のため";
+        $olcause = "竜巻注意情報発表のため";
+    }else if  (preg_match("/旅客対応/", $oimachiinfo)){
+        echo "旅客対応のため";
+        $olcause = "旅客対応のため";
   }
 
 //現状パターン
