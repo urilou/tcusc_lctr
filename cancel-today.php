@@ -58,12 +58,13 @@ echo "すべての休講データ数: ".$scoitm."<br>";
      }
 
 $lscohead = "今日、".$todaytweet."の休講情報（最新の情報は http://bit.ly/tcusclctr で確認してください。）";
-$lenth_l1 = strlen($lsco0) + strlen($lsco1) + strlen($lsco2) + strlen($lsco3) + strlen($lsco4) + strlen($lsco5) + strlen($lsco6) + strlen($lsco7) + strlen($lsco8) + strlen($lsco9) + strlen($lsco10) + strlen($lsco11) + strlen($lsco11) + strlen($lsco12) + strlen($lsco13) + strlen($lsco14);
-//// 10→15（2013/9/24）
+$lenth_l1 = strlen($lsco0) + strlen($lsco1) + strlen($lsco2) + strlen($lsco3) + strlen($lsco4) + strlen($lsco5) + strlen($lsco6) + strlen($lsco7) + strlen($lsco8) + strlen($lsco9)
+ + strlen($lsco10) + strlen($lsco11) + strlen($lsco12) + strlen($lsco13) + strlen($lsco14) + strlen($lsco15) + strlen($lsco16) + strlen($lsco17) + strlen($lsco18) + strlen($lsco19);
+// 10→15（2013/9/24）
 
  if ($lenth_l1 == 0) {
-  $lsco0 = "今日の休講情報はありません。（".$todaytweet."）";
-  echo $lsco0."<br/>\n";
+   $lsco0 = "今日の休講情報はありません。（".$todaytweet."）";
+   echo $lsco0."<br/>\n";
  } else {
  }
 

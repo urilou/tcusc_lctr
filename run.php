@@ -3,6 +3,7 @@
 // ヘッダー
 date_default_timezone_set("Asia/Tokyo");
 $day = date("m-d");
+$time = date("Hi");
 $hour = date("H");
 $min = date("i");
 $calendar = @file_get_contents("/home/users/1/mods.jp-usi/web/tcusc_lctr/calendar.txt");
@@ -262,8 +263,11 @@ if (preg_match("/$day/", $calendar)) {
   passthru("/usr/local/php5.3/bin/php /home/users/1/mods.jp-usi/web/tcusc_lctr/bot-weather.php");
 //  passthru("/usr/local/php5.3/bin/php /home/users/1/mods.jp-usi/web/tcusc_lctr/keihintohoku.php");
 
+if($time == "0800"){
+}else{
     for ($i = 0 ; $i < $bototherruntime ; $i++) {
         passthru("/usr/local/php5.4/bin/php /home/users/1/mods.jp-usi/web/tcusc_lctr/bot-other.php");
     }
+}
 
 ?>

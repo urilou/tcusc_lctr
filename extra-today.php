@@ -50,7 +50,8 @@ echo "すべての補講データ数: ".$seoitm."<br>";
      }
 
 $lseohead = "今日、".$todaytweet."の補講情報（最新の情報は http://bit.ly/tcusclctr で確認してください。）";
-$lenth_l1 = strlen($lseo0) + strlen($lseo1) + strlen($lseo2) + strlen($lseo3) + strlen($lseo4) + strlen($lseo5) + strlen($lseo6) + strlen($lseo7) + strlen($lseo8) + strlen($lseo9) + strlen($lseo10) + strlen($lseo11) + strlen($lseo12) + strlen($lseo13) + strlen($lseo14);
+$lenth_l1 = strlen($lseo0) + strlen($lseo1) + strlen($lseo2) + strlen($lseo3) + strlen($lseo4) + strlen($lseo5) + strlen($lseo6) + strlen($lseo7) + strlen($lseo8) + strlen($lseo9)
+ + strlen($lseo10) + strlen($lseo11) + strlen($lseo12) + strlen($lseo13) + strlen($lseo14) + strlen($lseo15) + strlen($lseo16) + strlen($lseo17) + strlen($lseo18) + strlen($lseo19);
 
  if ($lenth_l1 == 0) {
   $lseo0 = "今日の補講情報はありません。（".$todaytweet."）";

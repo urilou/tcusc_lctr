@@ -52,8 +52,10 @@ echo "すべての休講データ数: ".$scmitm."<br>";
      }
 
 $lscmhead = "明日、".$tmrrwtweet."の休講情報（最新の情報は http://bit.ly/tcusclctr で確認してください。）";
-$lenth_l1 = strlen($lscm0) + strlen($lscm1) + strlen($lscm2) + strlen($lscm3) + strlen($lscm4) + strlen($lscm5) + strlen($lscm6) + strlen($lscm7) + strlen($lscm8) + strlen($lscm9) + strlen($lscm10) + strlen($lscm11) + strlen($lscm12) + strlen($lscm13) + strlen($lscm14);
-//// 10→15（2013/9/24）
+$lenth_l1 = strlen($lscm0) + strlen($lscm1) + strlen($lscm2) + strlen($lscm3) + strlen($lscm4) + strlen($lscm5) + strlen($lscm6) + strlen($lscm7) + strlen($lscm8) + strlen($lscm9)
+ + strlen($lscm10) + strlen($lscm11) + strlen($lscm12) + strlen($lscm13) + strlen($lscm14) + strlen($lscm15) + strlen($lscm16) + strlen($lscm17) + strlen($lscm18) + strlen($lscm19);
+// 10→15（2013/9/24）
+// 15→20（2014/6/10）
 
  if ($lenth_l1 == 0) {
   $lscm0 = "明日の休講情報はありません。（".$tmrrwtweet."）";

@@ -49,7 +49,8 @@ echo "すべての補講データ数: ".$semitm."<br>";
      }
 
 $lsemhead = "明日、".$tmrrwtweet."の補講情報（最新の情報は http://bit.ly/tcusclctr で確認してください。）";
-$lenth_l1 = strlen($lsem0) + strlen($lsem1) + strlen($lsem2) + strlen($lsem3) + strlen($lsem4) + strlen($lsem5) + strlen($lsem6) + strlen($lsem7) + strlen($lsem8) + strlen($lsem9) + strlen($lsem10) + strlen($lsem11) + strlen($lsem12) + strlen($lsem13) + strlen($lsem14);
+$lenth_l1 = strlen($lsem0) + strlen($lsem1) + strlen($lsem2) + strlen($lsem3) + strlen($lsem4) + strlen($lsem5) + strlen($lsem6) + strlen($lsem7) + strlen($lsem8) + strlen($lsem9)
+ + strlen($lsem10) + strlen($lsem11) + strlen($lsem12) + strlen($lsem13) + strlen($lsem14) + strlen($lsem15) + strlen($lsem16) + strlen($lsem17) + strlen($lsem18) + strlen($lsem19);
 
  if ($lenth_l1 == 0) {
   $lsem0 = "明日の補講情報はありません。（".$tmrrwtweet."）";
