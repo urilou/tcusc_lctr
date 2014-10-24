@@ -39,7 +39,7 @@
         $data_item5 = $extra_data_html->find("td",4+$run_length+($run_length*5))->innertext;
         $data_item5 = str_replace('　', '', $data_item5);
         $data_item6 = $extra_data_html->find("td",5+$run_length+($run_length*5))->innertext;
-        $extra_data[] = '【補講】'.$data_item1.' '.$data_item2.'限　'.$data_item3.'（'.$data_item5.'　'.$data_item4.'） '.$data_item6."\n";
+        $extra_data[] = '【補講】今日 >> '.$data_item2.'限　'.$data_item3.'（'.$data_item5.'　'.$data_item4.'） '.$data_item6."\n";
       }
 
     }
