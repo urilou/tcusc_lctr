@@ -3,7 +3,7 @@
 
   include("parse_weather_warn.php");
 
-  $weather_xml = "http://weather.service.msn.com/data.aspx?weadegreetype=C&culture=ja-JP&weasearchstr=Setagaya,Tokyo";
+  $weather_xml = "http://weather.service.msn.com/data.aspx?weadegreetype=C&culture=ja-JP&weasearchstr=Setagaya,Tokyo&src=outlook";
   $warning_html = file_get_html('http://www.jma.go.jp/jp/warn/319_table.html');
   $weather_data = simplexml_load_file($weather_xml);
   //$time = date('Hi');
